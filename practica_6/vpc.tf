@@ -20,4 +20,7 @@ resource "aws_subnet" "private_subnet" {
   tags = {
     "Name" = "Private Subnet"
   }
+  depends_on = [
+    aws_subnet.public_subnet
+  ]
 }
