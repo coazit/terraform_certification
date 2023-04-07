@@ -5,4 +5,5 @@ resource "aws_instance" "public_instance" {
   tags = {
     "Name" = "Ec2-App-Ventas"
   }
+  key_name = data.aws_key_pair.key_private.key_name
 }
