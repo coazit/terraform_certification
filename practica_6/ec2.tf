@@ -6,4 +6,10 @@ resource "aws_instance" "public_instance" {
     "Name" = "Ec2-App-Ventas"
   }
   key_name = data.aws_key_pair.key_private.key_name
+
+  lifecycle {
+    replace_triggered_by = [
+      aws_subnet.private_subnet.id
+    ]
+  }
 }
