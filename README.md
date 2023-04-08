@@ -1,4 +1,4 @@
-# terraforn_certification
+# terraform_certification
 practices for terraform certification
 
 
