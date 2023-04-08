@@ -1,6 +1,6 @@
 variable "virginia_cidr" {
   description = "CIDR Virginia"
-  type        = string
+  type        = map(string)
 }
 
 # variable "public_subnet" {
