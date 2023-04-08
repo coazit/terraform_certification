@@ -20,3 +20,8 @@ instancia : 54.208.146.186 destruida
 instancia creada con IP: 52.55.107.177 
 instancia : 52.55.107.177 destruida 
 instancia creada con IP: 54.210.77.129 
+instancia : 54.210.77.129 destruida 
+instancia creada con IP: 54.81.126.98 
+instancia : 54.81.126.98 destruida 
+instancia : 54.90.245.52 destruida 
+instancia creada con IP: 44.204.60.141 
