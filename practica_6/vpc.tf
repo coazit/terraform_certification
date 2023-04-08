@@ -58,9 +58,17 @@ resource "aws_security_group" "sg_public_instance" {
   vpc_id      = aws_vpc.vpc_virginia.id
 
   ingress {
-    description = "SSH over rInternet"
+    description = "SSH over Internet"
     from_port   = 22
     to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = [var.sg_ingress_cidr]
+  }
+
+  ingress {
+    description = "HTTP over Internet"
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = [var.sg_ingress_cidr]
   }

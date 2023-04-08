@@ -11,4 +11,7 @@ tags = {
   "IAC_Version" = "1.4.4"
 }
 sg_ingress_cidr = "0.0.0.0/0"
-#sg_ingress_cidr = "38.25.17.121/32"
+ec2-specs = {
+  "ami"           = "ami-06e46074ae430fba6",
+  "instance_type" = "t2.micro"
+}
