@@ -5,11 +5,12 @@ resource "aws_instance" "public_instance" {
   tags = {
     "Name" = "Ec2-App-Ventas"
   }
-  key_name = data.aws_key_pair.key_private.key_name
+  key_name               = data.aws_key_pair.key_private.key_name
+  vpc_security_group_ids = [aws_security_group.sg_public_instance.id]
 
-  lifecycle {
-    replace_triggered_by = [
-      aws_subnet.private_subnet.id
-    ]
-  }
+  # lifecycle {
+  #   replace_triggered_by = [
+  #     aws_subnet.private_subnet.id
+  #   ]
+  # }
 }

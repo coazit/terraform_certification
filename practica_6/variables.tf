@@ -21,4 +21,9 @@ variable "subnets" {
 variable "tags" {
   description = "Tags del proyecto"
   type        = map(string)
-}  
+}
+
+variable "sg_ingress_cidr" {
+  description = "CIDR for Ingress Traffic"
+  type        = string
+}
