@@ -32,3 +32,8 @@ variable "ec2-specs" {
   description = "Parametros de la Instancia"
   type        = map(string)
 }
+
+variable "enable-monitoring"  {
+  description  =  "Habilita el despliegue de un servidor de monitoreo"
+  type = number
+}
