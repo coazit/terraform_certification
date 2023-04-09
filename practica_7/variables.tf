@@ -33,7 +33,7 @@ variable "ec2-specs" {
   type        = map(string)
 }
 
-variable "enable-monitoring"  {
-  description  =  "Habilita el despliegue de un servidor de monitoreo"
-  type = number
+variable "enable-monitoring" {
+  description = "Habilita el despliegue de un servidor de monitoreo"
+  type        = number
 }

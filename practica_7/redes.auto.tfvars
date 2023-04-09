@@ -10,11 +10,13 @@ tags = {
   "cloud"       = "AWS"
   "IAC"         = "Terraform"
   "IAC_Version" = "1.4.4"
+  "project"     = "cerberus"
+  "region"      = "virginia"
 }
 
 sg_ingress_cidr = "0.0.0.0/0"
 ec2-specs = {
-  "ami"           = "ami-06e46074ae430fba6",
+  "ami"           = "ami-06e46074ae430fba6"
   "instance_type" = "t2.micro"
 }
 enable-monitoring = 0
